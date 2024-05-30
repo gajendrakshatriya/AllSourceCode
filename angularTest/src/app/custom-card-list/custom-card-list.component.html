@@ -1,0 +1,12 @@
+<p>custom-card-list works!</p>
+<!-- <div *ngFor="let card of Cards">
+    Card: {{ card }}
+    <app-customcard [CardItem]=(card)></app-customcard>
+  </div> -->
+  <mat-grid-list cols="2" rowHeight="1:2">
+    <mat-grid-tile  *ngFor="let card of Cards"><app-customcard [CardItem]=(card)></app-customcard></mat-grid-tile>
+    <!-- <mat-grid-tile>2</mat-grid-tile>
+    <mat-grid-tile>3</mat-grid-tile>
+    <mat-grid-tile>4</mat-grid-tile> -->
+  </mat-grid-list>
+  

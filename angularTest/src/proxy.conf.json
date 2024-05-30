@@ -1,0 +1,8 @@
+{
+    "/*": {
+        "target": "https://gkwebapp2024.azurewebsites.net",
+        "secure": true,
+        "logLevel": "debug",
+        "changeOrigin": true
+    }
+}

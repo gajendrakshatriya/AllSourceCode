@@ -1,0 +1,15 @@
+<div style="margin: 5px;">
+    <div class="div" style="border-color: blue; border-width: 2; margin: 5px;background-color: aqua;">
+        <p>docman works!</p>
+        <button (click)="getDocmanData()">Get Docman</button><br />
+        <ul>
+            <li *ngFor="let item of docItems">
+                {{item.fieldName}} - {{item.content}} - {{item.confidence}}
+                <br />
+                <input [ngModel]="item.fieldName" />
+                <input [ngModel]="item.content" />
+                <input [ngModel]="item.confidence" />
+            </li>
+        </ul>
+    </div>
+</div>

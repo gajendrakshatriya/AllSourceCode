@@ -1,0 +1,12 @@
+.text{
+    color: red;
+}
+
+.textEdit
+{
+    color: green;
+}
+
+button, input[type="button"], input[type="submit"]{
+    background-color: blueviolet;
+}

@@ -1,0 +1,26 @@
+<div style="border-color: blue; border-width: 2px; margin: 5px;">
+    <p>insert-message works!</p>
+    <input type="text" #txtmsginput [value]="message" class="{textclass}" placeholder="Enter message for bus" />
+    &nbsp;
+    <button (click)="getMessage(txtmsginput.value)">getMessage</button>
+    <br /><br />
+    <input #inputmsg2 [(ngModel)]="message" />
+    &nbsp;
+    <button (click)="getMessageTwoway()">getMessageTwoway</button>
+    <br /><br />
+    <button (click)="updateMessage()">updateMessage</button>
+    <br />
+    {{ParentMsgReceived}}
+    <br /><br />
+    <button (click)="childEventEmitter()">EmitEventToParent</button>
+    <!-- <ul *ngFor="let item in msgArray">
+    <li><span>{{item.id}}</span>nbsp;<span>{{item.text}}</span></li>
+</ul> -->
+    <ul>
+        <li *ngFor="let item of msgArray">{{item.id}} - {{item.text}}</li>
+    </ul>
+    <!-- <ul>
+    <li *ngFor="let item of docItems">{{item.fieldName}} - {{item.content}} - {{item.confidence}}</li>
+</ul> -->
+
+</div>

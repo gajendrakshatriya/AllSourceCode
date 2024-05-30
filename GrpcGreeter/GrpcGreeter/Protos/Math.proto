@@ -1,0 +1,19 @@
+﻿syntax = "proto3";
+
+option csharp_namespace = "GrpcMath";
+
+package greet;
+
+// The math service definition.
+service Addition {
+  // Sends a greeting
+  rpc Add (AddRequest) returns (AddResponse);
+}
+message AddRequest{
+	int32 Value1 = 1;
+	int32 Value2 = 2;
+}
+
+message AddResponse{
+int32 Result =1;
+}

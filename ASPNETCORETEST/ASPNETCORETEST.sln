@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ASPNETCORETEST", "ASPNETCORETEST\ASPNETCORETEST.csproj", "{EDBA01EB-0A7F-43F6-BA5A-470EB9034F65}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzFunctionApp", "AzFunctionApp\AzFunctionApp.csproj", "{52572244-AA76-4545-A0B1-75E68505A7BB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureFunWithServiceBus", "AzureFunWithServiceBus\AzureFunWithServiceBus.csproj", "{9051843B-4BF2-4E2D-9833-DEB7F7F26DBD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureOperationsLib", "AzureOperations\AzureOperationsLib.csproj", "{537F401F-D402-4254-8747-2E2CF2B8A598}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureOperationsMessages", "AzureOperationsMessages\AzureOperationsMessages.csproj", "{D07B0F5A-9C87-4AA6-BAA2-E4F6936F2011}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OAuth20.Server", "OAuth20.Server\OAuth20.Server.csproj", "{B38031B4-44F9-439F-BD18-878C74698314}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EDBA01EB-0A7F-43F6-BA5A-470EB9034F65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDBA01EB-0A7F-43F6-BA5A-470EB9034F65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDBA01EB-0A7F-43F6-BA5A-470EB9034F65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDBA01EB-0A7F-43F6-BA5A-470EB9034F65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52572244-AA76-4545-A0B1-75E68505A7BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52572244-AA76-4545-A0B1-75E68505A7BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52572244-AA76-4545-A0B1-75E68505A7BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52572244-AA76-4545-A0B1-75E68505A7BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9051843B-4BF2-4E2D-9833-DEB7F7F26DBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9051843B-4BF2-4E2D-9833-DEB7F7F26DBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9051843B-4BF2-4E2D-9833-DEB7F7F26DBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9051843B-4BF2-4E2D-9833-DEB7F7F26DBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{537F401F-D402-4254-8747-2E2CF2B8A598}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{537F401F-D402-4254-8747-2E2CF2B8A598}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{537F401F-D402-4254-8747-2E2CF2B8A598}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{537F401F-D402-4254-8747-2E2CF2B8A598}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D07B0F5A-9C87-4AA6-BAA2-E4F6936F2011}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D07B0F5A-9C87-4AA6-BAA2-E4F6936F2011}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D07B0F5A-9C87-4AA6-BAA2-E4F6936F2011}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D07B0F5A-9C87-4AA6-BAA2-E4F6936F2011}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B38031B4-44F9-439F-BD18-878C74698314}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B38031B4-44F9-439F-BD18-878C74698314}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B38031B4-44F9-439F-BD18-878C74698314}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B38031B4-44F9-439F-BD18-878C74698314}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4DD95820-B364-4DF3-9551-EA254453ABFA}
+	EndGlobalSection
+EndGlobal
