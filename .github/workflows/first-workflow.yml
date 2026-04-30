@@ -1,0 +1,8 @@
+name: first workflow
+on: workflow_dispatch:
+  - main
+
+jobs:
+  job1:
+    echo"job1 start"
+    echo"job1 end"
