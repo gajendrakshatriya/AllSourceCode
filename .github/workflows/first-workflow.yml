@@ -4,5 +4,9 @@ on: workflow_dispatch:
 
 jobs:
   job1:
-    echo"job1 start"
-    echo"job1 end"
+    runs-on: ubuntu latest
+    steps:
+      - name: start echo
+        run: echo "job1 start"
+      - name: end echo
+        run: echo"job1 end"
