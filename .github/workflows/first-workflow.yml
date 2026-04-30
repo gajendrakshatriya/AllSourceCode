@@ -1,6 +1,5 @@
 name: first workflow
-on: workflow_dispatch:
-  - main
+on: workflow_dispatch
 
 jobs:
   job1:
