@@ -1,9 +1,8 @@
 name: first workflow
 on: workflow_dispatch
-
 jobs:
   job1:
-    runs-on: ubuntu latest
+    runs-on: ubuntu-latest
     steps:
       - name: start echo
         run: echo "job1 start"
