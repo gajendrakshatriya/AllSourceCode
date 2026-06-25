@@ -1,0 +1,41 @@
+name: Run Unit Tests
+
+on:
+  pull_request:
+    branches: [ main ]
+  push:
+    branches: [ add-unit-tests-console-app ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: '6.0.x'
+    
+    - name: Restore dependencies
+      run: dotnet restore ConsoleApp1/ConsoleApp1.sln
+    
+    - name: Build
+      run: dotnet build ConsoleApp1/ConsoleApp1.sln --configuration Release --no-restore
+    
+    - name: Run tests
+      run: dotnet test ConsoleApp1/ConsoleApp1.Tests/ConsoleApp1.Tests.csproj --configuration Release --no-build --verbosity normal --logger "trx;LogFileName=test-results.trx"
+    
+    - name: Upload test results
+      if: always()
+      uses: actions/upload-artifact@v3
+      with:
+        name: test-results
+        path: '**/test-results.trx'
+    
+    - name: Test Report
+      if: always()
+      run: |
+        echo "## Test Execution Summary" >> $GITHUB_STEP_SUMMARY
+        echo "Tests completed. Check the logs above for details." >> $GITHUB_STEP_SUMMARY
